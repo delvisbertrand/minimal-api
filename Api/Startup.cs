@@ -106,6 +106,8 @@ namespace MinimalApi
             app.UseAuthentication();
             app.UseAuthorization();
 
+            app.UseCors();
+
             app.UseEndpoints(endpoints =>
             {
                 #region Home
